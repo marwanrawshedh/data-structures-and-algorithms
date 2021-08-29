@@ -163,6 +163,20 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let newarr=[]
+  arr.forEach(element=>{
+if(Number.isInteger(element/3)&Number.isInteger(element/5))
+{
+  newarr.push("Fizz Buzz")
+}
+else if(Number.isInteger(element/3)||Number.isInteger(element/5)){
+  if(Number.isInteger(element/3)){newarr.push("Fizz")}
+  else{newarr.push("Buzz") }
+}
+else{newarr.push(element)}
+
+  })
+  return newarr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -216,7 +230,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
