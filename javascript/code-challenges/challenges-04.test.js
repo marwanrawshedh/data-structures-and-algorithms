@@ -29,7 +29,7 @@ const updateAnimal = (arr, callback) => {
  let newarr1=arr.map(element => 
   lower(element))
   return newarr , newarr1
-  // Solution code here...
+  // Solution code here....
 };
 
 /* ------------------------------------------------------------------------------------------------
