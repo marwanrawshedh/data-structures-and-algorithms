@@ -77,12 +77,13 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  let new1=str
-  result.push(str)
-  for(let i=1;i<=str.length;i++){
-    new1 = new1.substring(1)
-result.push(new1)
+  
+  // result.push(str)
+  for(let i=0;i<str.length;i++){
+    let newn= str.slice(i,str.length)
+result.push(newn)
   }
+  result.push("")
   
   // Solution code here...
   return result;
