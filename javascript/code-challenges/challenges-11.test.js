@@ -44,9 +44,7 @@ const count = (target, input) => {
   input.forEach(element => {
     element.filter(e => {
       if (e == target) { newarr.push(e) }
-    })
-
-  });
+    })});
 
   return newarr.length
   // Solution code here...
@@ -95,25 +93,19 @@ const divisibleByFiveTwoToThePower = (input) => {
       if(typeof(element)==="number"){
       if (element % 5 == 0) {
         m.push(element)
-      }}
-    })
-    newarr.push(m)
-  }
+      }}})
+    newarr.push(m)}
   let final = []
   for (let j = 0; j < newarr.length; j++) {
     let m = []
     newarr[j].filter(elemen => {
       if (true) {
         m.push(2 ** elemen)
-        
       }
     })
-    final.push(m)
-  }
+    final.push(m)}
   // Solution code here...
-  return final
-};
-
+  return final};
   /* ------------------------------------------------------------------------------------------------
   CHALLENGE 5 
   
