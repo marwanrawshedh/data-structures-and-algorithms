@@ -11,18 +11,22 @@ Write a function named screenForNames that takes in an array of strings and uses
 ------------------------------------------------------------------------------------------------ */
 
 const screenForNames = (arr) => {
-  // Solution code here...
-  let a = /\b[Mr.](\w)*/g;
-  let b = /\b[Mrs.](\w)*/g;
-  let c = /\b[Ms.](\w)*/g;
-  let d = /\b[Mr. ](\w)*/g;
-  let newarr = [];
+  let newArr = [];
+
   for (let i = 0; i < arr.length; i++) {
-    if (a.test(arr[i]) == true) {
-      newarr.push(arr[i]);
+    if (arr[i][0] !== " " && arr[i][5] !== "P") {
+      if (
+        arr[i].includes("Mr. ") ||
+        arr[i].includes("Mrs. ") ||
+        arr[i].includes("Ms. ") ||
+        arr[i].includes("Dr. ")
+      ) {
+        newArr.push(arr[i]);
+      }
     }
   }
-  return newarr;
+  console.log(newArr);
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
