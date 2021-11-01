@@ -20,4 +20,15 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+- Please follow the instructions specific to your 401 language, which can be 
+found in the directory below, matching your course.
+
+
+|  NO  |topic            |  link             |
+|  -  | - | - |
+| 1.  | code-challenge01(array-reverse) | [array-reverse](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/401codechallenges/README.md) |
+| 2.  | code-challenge02(array-insert-shift) |  [array-insert-shift](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge02/README.md) |
+| 3.  |   |   |
+| 4.  |   |   |
+| 5.  |   |   |
+| 6.  |   |   |
