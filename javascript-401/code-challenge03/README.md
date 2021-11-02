@@ -1,7 +1,7 @@
 # BinarySearch
 ## This code challenge 03 requires me to write a function that takes two parameters (array, number) and asks me to find the index of the number which is equal to the same given number and if the number does not exist then return -1, there are two constraints like we can't use a built method and we must use (search algorithm)
 
-![array-insert-shift](array-insert-shift.PNG)
+![array-insert-shift](array-insert-shift.png)
 
 # approach
 ## the first thing i read about search algorithm after that i divide every condition alone .
