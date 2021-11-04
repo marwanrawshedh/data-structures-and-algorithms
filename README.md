@@ -30,5 +30,5 @@ found in the directory below, matching your course.
 | 2.  | code-challenge02(array-insert-shift) |  [array-insert-shift](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge02/README.md) |
 | 3.  | code-challenge03(array-binary-search)  | [array-binary-search](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge03/README.md)  |
 | 4.  |   |   |
-| 5.  |   |   |
+| 5.  |  code-challenge03(Singly Linked Lists) | [Singly Linked Lists](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge05/README.md)  |
 | 6.  |   |   |
