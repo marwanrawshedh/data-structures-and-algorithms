@@ -148,7 +148,7 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
-  for(i=0;i>ingredients.length;i++){
+  for(let i=0;i>ingredients.length;i++){
   let newarr=recipe.ingredients.split(" ")
   result.push(newarr[3])
   }
