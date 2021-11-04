@@ -151,8 +151,8 @@ const listFoods = (recipe) => {
   for (let i = 0; i < recipe.ingredients.length; i++) {
     let newarr = recipe.ingredients[i].split(" ");
     let m=""
-    for (let j = 1; j < newarr.length; j++) {
-      if (j == 1) {
+    for (let j = 2; j < newarr.length; j++) {
+      if (j == 2) {
         m += `${newarr[j]}`;
       } else {
         m += ` ${newarr[j]}`;
