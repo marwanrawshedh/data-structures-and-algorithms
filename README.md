@@ -33,3 +33,4 @@ found in the directory below, matching your course.
 | 5.  |  code-challenge05(Singly Linked Lists) | [Singly Linked Lists](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge05/README.md)  |
 | 6.  | code-challenge06(linked-list-insertions ) | [linked-list-insertions](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge05/README.md)   |
 | 7.  | code-challenge07(linked-list-kth ) | [linked-list-kth](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge07/README.md)   |
+| 8.  | code-challenge10(Stack and a Queue ) | [Stack and a Queue](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge10/README.md)   |
