@@ -1,61 +1,57 @@
 "use strict";
 
-const LinkedList = require("../lib/linkedList");
+const LinkedList = require("../lib/zipLinkedList.js");
 
-describe("Linked list", () => {
+describe("Zip-Linked list", () => {
+  it("Zip the two linked lists together into one ", () => {
+    let ll = new LinkedList();
 
-  it("Where k is greater than the length of the linked list", () => {
-      let list = new LinkedList();
+    ll.append(1);
+    ll.append(2);
+    ll.append1(5);
+    ll.append1(6);
+    ll.zipLists(ll.head, ll.head1);
+    expect(ll.head.value).toBe(1);
+    expect(ll.head.next.value).toBe(5);
+    expect(ll.head.next.next.value).toBe(2);
+    expect(ll.head.next.next.next.value).toBe(6);
+  });
+  it("Zip the two linked lists together into one ", () => {
+    let ll = new LinkedList();
 
-      list.append(1)
-      list.append(2)
-      list.append(3)
-      expect(list.kthFromEnd(4)).toBe("Exception");
-    });
-    it("Where k and the length of the list are the same", () => {
-      let list = new LinkedList();
-
-      list.append(1)
-      list.append(2)
-      list.append(3)
-      expect(list.kthFromEnd(0)).toBe(3);
-    });
+    ll.append(1);
     
+    ll.append1(5);
+    ll.append1(6);
+    ll.zipLists(ll.head, ll.head1);
+    expect(ll.head.value).toBe(1);
+    expect(ll.head.next.value).toBe(5);
+    expect(ll.head.next.next.value).toBe(6);
     
-    it("Where k is not a positive integer", () => {
-      let list = new LinkedList();
+  });
+  it("Zip the two linked lists together into one ", () => {
+    let ll = new LinkedList();
 
-      list.append(1)
-      list.append(2)
-      list.append(3)
-      expect(list.kthFromEnd(-1)).toBe("Exception");
-    });
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append1(6);
+    ll.zipLists(ll.head, ll.head1);
+    expect(ll.head.value).toBe(1);
+    expect(ll.head.next.value).toBe(6);
+    expect(ll.head.next.next.value).toBe(2);
+    expect(ll.head.next.next.next.value).toBe(3);
+  });
+  it("Zip the two linked lists together into one bun one of it empty ", () => {
+    let ll = new LinkedList();
+
+    ll.append(1);
+    ll.append(2);
+    ll.append(3);
+    ll.zipLists(ll.head, ll.head1);
+    expect(ll.head.value).toBe(1);
+    expect(ll.head.next.value).toBe(2);
+    expect(ll.head.next.next.value).toBe(3);
     
-    it("Where the linked list is of a size 1", () => {
-      let list = new LinkedList();
-
-      list.append(1)
-      
-      expect(list.kthFromEnd(0)).toBe(1);
-    });
-    it("Where the linked list is of a size 1", () => {
-      let list = new LinkedList();
-
-      list.append(1)
-      
-      expect(list.kthFromEnd(0)).toBe(1);
-      expect(list.kthFromEnd(1)).toBe("Exception");
-    });
-    it("“Happy Path” where k is not at the end, but somewhere in the middle of the linked list", () => {
-      let list = new LinkedList();
-
-      list.append(1)
-      list.append(2)
-      list.append(3)
-      list.append(4)
-      list.append(5)
-      expect(list.kthFromEnd(2)).toBe(3);
-      
-    });
-
+  });
 });
