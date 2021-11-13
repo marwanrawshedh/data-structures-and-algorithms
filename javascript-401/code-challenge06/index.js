@@ -21,8 +21,8 @@ ll.append(4);
 // ll.append(11);
 // ll.toString()
 // console.log(ll)
-
-
+ll.insertBefore(4,22)
+// ll.insertAfter(2,22)
 console.log(ll.toString());
 
 // console.log(ll)

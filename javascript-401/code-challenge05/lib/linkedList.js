@@ -23,59 +23,11 @@ class LinkedList {
       const newNode = new Node(value);
       this.tail.next = newNode;
 
-      this.tail = this.tail.next;
+      this.tail = newNode;
     }
   }
 
-  insertAfter(value, newValue) {
-    const newNode = new Node(newValue);
-    let currentNode = this.head;
-    let lastnode = this.head;
-
-    while (currentNode) {
-      if (currentNode.value == value) {
-        lastnode = currentNode.next;
-        currentNode.next = newNode;
-        currentNode.next.next = lastnode;
-
-        return this;
-      } else {
-        lastnode = lastnode.next;
-
-        currentNode = currentNode.next;
-      }
-    }
-    return this;
-  }
-  insertBefore(value, newValue) {
-    const newNode = new Node(newValue);
-    let currentNode = this.head;
-    let previos = this.head;
-    let i = 0;
-    while (currentNode) {
-      i += 1;
-      if (currentNode.value == value) {
-        if (i == 1) {
-          let lastnode = newNode;
-          lastnode.next = previos;
-          this.head = lastnode;
-
-          return this;
-        } else {
-          let lastnode = newNode;
-          lastnode.next = currentNode;
-
-          previos.next = lastnode;
-          return this;
-        }
-      } else {
-        previos = currentNode;
-        currentNode = currentNode.next;
-      }
-    }
-
-    return this;
-  }
+ 
   toString() {
     let currntNode = this.head;
     let string = "";
@@ -96,6 +48,33 @@ class LinkedList {
       }
     }
     return string;
+  }
+  insert(value) {
+    const newnode = new Node(value);
+    if (!this.head) {
+      this.head = newnode;
+      return this;
+    }
+    return this;
+  }
+  
+  includes(value) {
+    let currntNode = this.head;
+    let boolean = false;
+    if(currntNode){ // if condition to prevent from error check if the linked list is empty
+    let currntValue = this.head.value;
+    while (currntNode) {
+      if (currntValue == value) { //check if we the target number existing
+        boolean = true;
+        currntNode = null;
+        return boolean;
+      }
+      currntNode = currntNode.next;
+      if (currntNode) { //check if we reached the last node
+        currntValue = currntNode.value;
+      }
+    }}
+    return boolean;
   }
 }
 module.exports = LinkedList;
@@ -129,30 +108,3 @@ module.exports = LinkedList;
 //     return this;
 //   }
 
-// insert(value) {
-//   const newnode = new Node(value);
-//   if (!this.head) {
-//     this.head = newnode;
-//     return this;
-//   }
-//   return this;
-// }
-
-// includes(value) {
-//   let currntNode = this.head;
-//   let boolean = false;
-//   if(currntNode){ // if condition to prevent from error check if the linked list is empty
-//   let currntValue = this.head.value;
-//   while (currntNode) {
-//     if (currntValue == value) { //check if we the target number existing
-//       boolean = true;
-//       currntNode = null;
-//       return boolean;
-//     }
-//     currntNode = currntNode.next;
-//     if (currntNode) { //check if we reached the last node
-//       currntValue = currntNode.value;
-//     }
-//   }}
-//   return boolean;
-// }
