@@ -36,4 +36,6 @@ found in the directory below, matching your course.
 | 8.  | code-challenge08(linked-list-zip ) | [linked-list-zip](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge08/README.md)   |
 | 9.  | code-challenge09 |    |
 | 10.  | code-challenge10(Stack and a Queue ) | [Stack and a Queue](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge10/README.md)   |
+| 11.  | code-challenge10(stack-queue-pseudo ) | [stack-queue-pseudo](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge11/README.md)   |
+
 
