@@ -22,17 +22,3 @@ i created a Singly Linked List include a value and net point with three methode 
 - [x] Can properly return a collection of all the values that exist in the linked list
 
 
-# linked-list-insertions code challenge 06
-## this challenge is asking to create a Singly Linked Lists that contain a insert methods (which allows us to add a new node:at the first ,the end of the list ,before a target node ,and after target node ).
-## Whiteboard Process
-
-![linked-list-insertions](linked-list-insertions.PNG)
-
-
-## Approach & Efficiency
-
-- Singly Linked Lists why? it is a simple data structur time:  Big O =O(n)
-space:  Big O =O(1)
-
-
-

@@ -42,41 +42,25 @@ class LinkedList {
       this.tail.next = newNode;
 
       this.tail = this.tail.next;
-    }
-  }
+    }}
   zipLists(head, head1) {
+    let m;
+    let l
     let currentNode = head;
-    let currentNode1 = this.head1;
-    let m = this.final;
-    let i = 0;
-
-    while (i<3) {
-      i++;
-      // console.log(currentNode1, "pp");
-      // console.log(currentNode1,2)
-      console.log(currentNode1)
-      console.log(currentNode)
-      if (currentNode) {
-        m= currentNode;
-        currentNode = currentNode.next;
-        // console.log(m)
-        // this.final = this.final.next;
-        
-        m=m.next 
-      }
-      if (currentNode1) {
-        // console.log(i)
-        m = currentNode1;
-        currentNode1 = currentNode1.next;
-      }
-      
-    }
-    // console.log(this.head,"k")
-    console.log(this, "finaaal");
-    // return this
-  }
-
- 
+    let currentNode1 = head1;
+    while (!(currentNode === null && currentNode1 === null)) {
+      if(currentNode===null&&!(currentNode1===null)){head=head1
+      return head}
+      if(!(currentNode===null||currentNode1===null)){
+      l=currentNode.next
+      m=currentNode1.next
+      currentNode.next=currentNode1
+      currentNode1=m
+      currentNode.next.next=l 
+      if( (currentNode.next.next===null&&!(currentNode1===null))){
+        currentNode.next.next=currentNode1
+        return this}
+      currentNode=currentNode.next.next}
+      if(currentNode1===null){return this}}}
 }
 module.exports = LinkedList;
-
