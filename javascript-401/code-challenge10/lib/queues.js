@@ -1,7 +1,7 @@
 "use strict";
 const Node = require("./node");
 
-class queues {
+class AnimalShelter {
   constructor() {
     this.front=null;
     this.ww=null
@@ -38,5 +38,5 @@ class queues {
   }
 
 }
-module.exports = queues;
+module.exports = AnimalShelter;
 
