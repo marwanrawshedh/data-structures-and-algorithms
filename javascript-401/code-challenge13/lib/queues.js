@@ -38,6 +38,17 @@ currentnode=currentnode.next}}
   isEmpty(){
     return this.front===null
   }
+  validateBrackets(string){
+    let arr = string.replace(/[^\[\]\(\)<>]+/g,"");//brackets only remove letters numbers
+    if(arr.length % 2 !== 0) return false; // odd return false
+       arr = arr.replace(/(\[\])|(\(\))|(<>)/g, "")
+      if (arr.length === 2 ) { 
+          if(arr[0]==="{"&&arr[1]==="}"){return true;}
+          if(arr[0]==="("&&arr[1]===")"){return true;}
+          if(arr[0]==="["&&arr[1]==="]"){return true;}
+          ;  }     // Balanced and good. :)
+      return false;  
+  }
   
 }
 module.exports = AnimalShelter;
