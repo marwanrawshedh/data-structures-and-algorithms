@@ -39,14 +39,16 @@ currentnode=currentnode.next}}
     return this.front===null
   }
   validateBrackets(string){
-    let arr = string.replace(/[^\[\]\(\)<>]+/g,"");//brackets only remove letters numbers
-    if(arr.length % 2 !== 0) return false; // odd return false
-       arr = arr.replace(/(\[\])|(\(\))|(<>)/g, "")
+    let arr = string.replace(/[^\[\]\{\}\(\)<>]+/g,"");
+    console.log(arr)
+    if(arr.length % 2 !== 0) return false; 
+       arr = arr.replace(/(\[\])|(\(\))|(\{\})|(<>)/g, "")
+       console.log(arr)
       if (arr.length === 2 ) { 
           if(arr[0]==="{"&&arr[1]==="}"){return true;}
           if(arr[0]==="("&&arr[1]===")"){return true;}
           if(arr[0]==="["&&arr[1]==="]"){return true;}
-          ;  }     // Balanced and good. :)
+          ;  }  else if(arr.length === 0 ){return true;}   
       return false;  
   }
   
