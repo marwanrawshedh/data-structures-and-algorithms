@@ -44,4 +44,6 @@ found in the directory below, matching your course.
 | 17.  | code-challenge17(tree-breadth-first) | [tree-breadth-first](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge17/README.md)   |
 | 18.  | code-challenge18(k-ary tree) | [k-ary tree](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge18/README.md)   |
 | 26.  | code-challenge26(insertionSor) | [insertionSor](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge26/README.md)   |
+| 27.  | code-challenge27(insertionSor2) | [insertionSor2](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge27/README.md)   |
+| 27.  | code-challenge28(insertionSor3) | [insertionSor2](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge28/README.md)   |
 
