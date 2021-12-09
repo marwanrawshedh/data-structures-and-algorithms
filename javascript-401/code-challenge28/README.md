@@ -4,7 +4,7 @@
 
 ## Approach & Efficiency
 - approach (recursion function) 
-- Big O spaceo(1)/time O(n^2)
+- Big O spaceo(1)/time O(n^3)
 
 ## Solution
 - how to run your code node insertionSort.js
