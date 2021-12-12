@@ -47,4 +47,5 @@ found in the directory below, matching your course.
 | 27.  | code-challenge27(insertionSor2) | [insertionSor2](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge27/README.md)   |
 | 28.  | code-challenge28(insertionSor3) | [insertionSor2](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge28/README.md)   |
 | 29.  | code-challenge30(Hash Tables) | [Hash Tables](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge30/README.md)   |
+| 30.  | code-challenge30(hashmap-repeated-word) | [hashmap-repeated-word](https://github.com/marwanrawshedh/data-structures-and-algorithms/blob/main/javascript-401/code-challenge30/README.md)   |
 
