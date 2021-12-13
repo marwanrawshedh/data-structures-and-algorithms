@@ -1,0 +1,18 @@
+{
+  "name": "code-challenge07",
+  "version": "1.0.0",
+  "description": "<!-- Short summary or background information --> i created a Singly Linked List include a value and net point with three methode allow me to insert node search for a value reprsent all list's values .",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
